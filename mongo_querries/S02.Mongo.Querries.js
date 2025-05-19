@@ -1,4 +1,4 @@
-Querrías mongo
+Querries mongo
 
 
 //1.Escribe una consulta para mostrar todos los documentos en la colección Restaurantes.
@@ -57,7 +57,7 @@ db.restaurants.find({cuisine: {$ne:"American"}, "grades.grade": "A", borough:{$n
 
 //14. Escribe una consulta para encontrar el restaurante_id, name, borough y cuisine para aquellos restaurantes que contienen 'Wil' como las tres primeras letras en su nombre.
 
-db.restaurants.find({cuisine: {$ne:"American"}, "grades.grade": "A", borough:{$ne:"Brooklyn"}}).sort({cuisine: -1}).pretty();
+db.restaurants.find({ name: /^Wil/ }, { restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id: 0 }).pretty();
 
 //15. Escribe una consulta para encontrar el restaurante_id, name, borough y cuisine para aquellos restaurantes que contienen 'ces' como las últimas tres letras en su nombre.
 
