@@ -1,4 +1,4 @@
-Querrías mongo
+Querries mongo
 
 
 //1.Escribe una consulta para mostrar todos los documentos en la colección Restaurantes.
